@@ -14,5 +14,5 @@ class SecondHandler(webapp2.RequestHandler):
             "title": "Second Title",
             "content": "Goodbye"
         }
-        template = jinja_env.env.get_template('templates/tmpl.html')
+        template = jinja_env.env.get_template('templates/input.html')
         self.response.out.write(template.render(html_params))
