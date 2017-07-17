@@ -1,43 +1,15 @@
-/*
+
 h1 {
 	text-align: center;
+	color: white;
+}
+
+#image {
+	padding-top: 40px;
 }
 
 body {
 	text-align: center;
-
-}
-
-.btn {
-	height:100px;
-	width:200px;
-}
-
-#workplace {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 300px;
-    border: 3px solid blue;
-}
-
-video.fullscreen { 
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translate(-50%, -50%);
-}
-
-#professional {
-background-color: black; 
-}  */
-
-body {
 	background-image:url('https://media.giphy.com/media/xTiTnoFlplnVO1Sow0/giphy.gif');
 	background-size:100%;
 	background-repeat: repeat-y;
