@@ -11,10 +11,10 @@ class FormListHandler(webapp2.RequestHandler):
         forms = form_model.FormModel.query().fetch()
         logging.info(forms)
         comment_str = ""
-        for formModel in comments:
+        for FormModel in forms:
             comment_str += "<div>"
-            comment_str += "<h3>Author : " + comments.form_name + "</h3>"
-            comment_str += "<p>" + comments.form_task + "</p>"
+            comment_str += "<h3>Author : " + FormModel.form_name + "</h3>"
+            comment_str += "<p>" + FormModel.form_task + "</p>"
             comment_str += "</div>"
 
 
