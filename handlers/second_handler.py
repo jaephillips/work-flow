@@ -22,25 +22,26 @@ class SecondHandler(webapp2.RequestHandler):
 
     def post(self):
         logging.info("USER SAID POST")
-        r_name =self.request.get("form_name")
-        r_task =self.request.get("form_task")
-        r_level =self.request.get("form_level")
-        r_date= self.request.get("form_date")
-        r_instructions= self.request.get("form_instructions")
+        r_name =self.request.get("name")
+        r_task =self.request.get("task")
+        r_level =self.request.get("level")
+        r_date= self.request.get("date")
+        r_instructions= self.request.get("instructions")
+        r_assign= self.request.get("assignBy")
+        r_email = self.request.get("email")
 
 
 
         new_form = form_model.FormModel(
-                form_name= r_name,
-                form_task= r_task,
-                form_level= r_level,
-                form_date= r_date,
-                form_instructions=r_instructions,
-                user_email="FIX ME LATER",
+                name= r_name,
+                task= r_task,
+                level= r_level,
+                date= r_date,
+                instructions=r_instructions,
+                assignBy= r_assign,
+                email=r_email,
 
             )
 
         new_form.put()
         self.redirect("/second")
-
-        
