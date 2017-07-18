@@ -34,6 +34,8 @@ class SecondHandler(webapp2.RequestHandler):
                 form_name= r_name,
                 form_task= r_task,
                 form_level= r_level,
+                form_date= r_date,
+                form_instructions=r_instructions,
                 user_email="FIX ME LATER",
 
             )
