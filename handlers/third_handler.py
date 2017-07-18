@@ -13,7 +13,7 @@ class FormListHandler(webapp2.RequestHandler):
         comment_str = ""
         for FormModel in forms:
             comment_str += "<div>"
-            comment_str += "<h3>Author : " + str(FormModel.form_name) + "</h3>"
+            comment_str += "<h3>Worker : " + str(FormModel.form_name) + "</h3>"
             comment_str += "<p>" + str(FormModel.form_task) + "</p>"
             comment_str += "</div>"
             comment_str += "<h3>Difficulty level :" + str(FormModel.form_level) + "</h3>"
