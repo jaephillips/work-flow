@@ -41,6 +41,6 @@ class SecondHandler(webapp2.RequestHandler):
             )
 
         new_form.put()
-        self.redirect("/formlist")
+        self.redirect("/second")
 
         
