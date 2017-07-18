@@ -8,4 +8,3 @@ class FormModel(ndb.Model):
     instructions = ndb.StringProperty()
     assignBy = ndb.StringProperty()
     email= ndb.StringProperty()
-    

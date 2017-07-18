@@ -28,6 +28,7 @@ class SecondHandler(webapp2.RequestHandler):
         r_date= self.request.get("date")
         r_instructions= self.request.get("instructions")
         r_assign= self.request.get("assignBy")
+        r_email = self.request.get("email")
 
 
 
@@ -38,7 +39,7 @@ class SecondHandler(webapp2.RequestHandler):
                 date= r_date,
                 instructions=r_instructions,
                 assignBy= r_assign,
-                email="FIX ME LATER",
+                email=r_email,
 
             )
 

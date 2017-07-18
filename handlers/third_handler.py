@@ -21,7 +21,7 @@ class FormListHandler(webapp2.RequestHandler):
             comment_str += "<h4>Due Date: "+ str(FormModel.date) + "</h4>"
             comment_str += "<h5>Instructions: "+ str(FormModel.instructions) + "</h5>"
             comment_str += "<h5>Assigned By: " + str(FormModel.assignBy) + "</h5>"
-
+            comment_str += "<h5>Contact them here: " + str(FormModel.email) + "</h5>"
 
 
     	
