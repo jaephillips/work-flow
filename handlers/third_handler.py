@@ -15,7 +15,7 @@ class FormListHandler(webapp2.RequestHandler):
             comment_str += "<div>"
             comment_str += "<h3>Worker : " + str(FormModel.name) + "</h3>"
             comment_str += "<h3>Assigned By: " + str(FormModel.assignBy) + "</h3>"
-            comment_str += "<p>" + str(FormModel.form_task) + "</p>"
+            comment_str += "<p>" + str(FormModel.task) + "</p>"
             comment_str += "</div>"
             comment_str += "<h3>Difficulty level: " + str(FormModel.level) + "</h3>"
             comment_str += "<h4>Due Date: "+ str(FormModel.date) + "</h4>"
