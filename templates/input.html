@@ -1,20 +1,24 @@
 <h1>Task Creator</h1>
 <form method="POST">
 	<p>What is your name?</p>
-	<input name="form_name"></input>
+	<input name="name"></input>
 
 	<p>What is your Task</p>
-	<input name="form_task"></input>
+	<input name="task"></input>
 
 	<p>Difficulty Level</p>
-	<input name="form_level"></input>
+	<input name="level"></input>
 
 	<p>Due Date</p>
-	<input name="form_date"></input>
+	<input name="date"></input>
 
 	<p>Instructions</p>
-	<textarea name="form_instructions" placeholder="Instructions..."></textarea>
-	<br/>
+	<textarea name="instructions" placeholder="Instructions..."></textarea>
+
+	<p>Assigned By</p>
+	<input name="assignBy"></input>
+	<br>
+	<br>
 	<input type="submit"/>
 </form>
 <form method="GT" action="/formlist">
