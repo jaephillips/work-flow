@@ -13,15 +13,17 @@ class FormListHandler(webapp2.RequestHandler):
         comment_str = ""
         for FormModel in forms:
             comment_str += "<div>"
-            comment_str += "<h3>Worker : " + str(FormModel.name) + "</h3>"
-            comment_str += "<h3>Assigned By: " + str(FormModel.assignBy) + "</h3>"
-            comment_str += "<p>" + str(FormModel.task) + "</p>"
+            comment_str += "<h2>Worker : " + str(FormModel.name) + "</h2>"
+            comment_str += "<h3>Assigned By: </h3>" 
+            comment_str += "<h5> " + str(FormModel.assignBy) + "</h5>"
+            comment_str += "<h2>Task:" + str(FormModel.task) + "</h2>"
             comment_str += "</div>"
-            comment_str += "<h3>Difficulty level: " + str(FormModel.level) + "</h3>"
-            comment_str += "<h4>Due Date: "+ str(FormModel.date) + "</h4>"
-            comment_str += "<h5>Instructions: "+ str(FormModel.instructions) + "</h5>"
-            comment_str += "<h5>Assigned By: " + str(FormModel.assignBy) + "</h5>"
-            comment_str += "<h5>Contact them here: " + str(FormModel.email) + "</h5>"
+            comment_str += "<h2>Difficulty level: " + str(FormModel.level) + "</h2>"
+            comment_str += "<h2>Due Date: "+ str(FormModel.date) + "</h2>"
+            comment_str += "<h2>Instructions: </h2>" 
+            comment_str += "<h3> " + str(FormModel.instructions) + "</h3>"
+            comment_str += "<h2>Assigned By: " + str(FormModel.assignBy) + "</h2>"
+            comment_str += "<h2>Contact them here: " + str(FormModel.email) + "</h2>"
 
 
     	
