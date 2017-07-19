@@ -3,6 +3,7 @@ h1 {
 	text-align: center;
 	color: white;
 	font-size: 50px;
+	font-family: Tahoma;
 }
 body {
     background-color: black;
@@ -11,15 +12,9 @@ body {
 	padding-top: 30px;
 }
 
-body {
-	text-align: center;
-	background-image:url('https://media.giphy.com/media/xTiTnoFlplnVO1Sow0/giphy.gif');
-	background-size:100%;
-	background-repeat: repeat-y;
-	background-attachment: fixed;
-	height:100%
-	width: 100%;
-}
 
-#frontpic {border-style: solid;}
+#frontpic {border-style: solid;
+		   display: block;
+   		   margin: auto;
+           width: 40%;}
 
