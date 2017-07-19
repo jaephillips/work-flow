@@ -1,7 +1,9 @@
 import jinja_env
 import logging
 import webapp2
+import time
 
+from google.appengine.ext import ndb
 from models import book
 from models import form_model
 
@@ -28,8 +30,8 @@ class FormListHandler(webapp2.RequestHandler):
             comment_str += "<h4> " + str(FormModel.assignBy) + "</h5>"
             comment_str += "<h3>Contact them here: </h4>" 
             comment_str += "<h4> " + str(FormModel.email) + "</h5>"
-            comment_str += "<button> Remove Task </button>"
             comment_str += "<br>"
+            comment_str += '<input type = "checkbox" name = "remove" value = "'+str(FormModel.key.urlsafe())+'"></input>'
             comment_str += "</div>"
             comment_str += "<br>"
                	
@@ -39,3 +41,10 @@ class FormListHandler(webapp2.RequestHandler):
         }
         template = jinja_env.env.get_template('templates/taskboard.html')
         self.response.out.write(template.render(html_params))
+
+    def post(self):
+        r_remove =self.request.get("remove")
+        removeKey = ndb.Key(urlsafe=r_remove)
+        removeKey.delete()
+        time.sleep(1)
+        self.redirect('/formlist')
