@@ -8,4 +8,6 @@ body{
 }
 .comm{
 	border: 2px dashed black;
+	background: rgba(76, 0, 80, 0.3)
+
 }
