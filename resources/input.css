@@ -16,3 +16,21 @@ body {
 	
 
 }
+#m { background-color: navy;
+	      border: 5px navy;
+	      color: white;
+	      width: 110px;
+	      position: relative;
+	      top: 1px;
+          left:-1px;
+}
+
+#submit { background-color: navy;
+	      border: 50px navy;
+	      color: white;
+	      width: 110px;
+	      position: relative;
+	      top: 1px;
+          left:-1px;
+}
+
