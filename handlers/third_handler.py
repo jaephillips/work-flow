@@ -12,18 +12,25 @@ class FormListHandler(webapp2.RequestHandler):
         logging.info(forms)
         comment_str = ""
         for FormModel in forms:
-            comment_str += "<div>"
+            comment_str += '<div class = "comm">'
             comment_str += "<h2>Worker : " + str(FormModel.name) + "</h2>"
-            comment_str += "<h3>Assigned By: </h3>" 
-            comment_str += "<h5> " + str(FormModel.assignBy) + "</h5>"
-            comment_str += "<h2>Task:" + str(FormModel.task) + "</h2>"
+            comment_str += "<h3>Assigned By: </h4>" 
+            comment_str += "<h4> " + str(FormModel.assignBy) + "</h5>"
+            comment_str += "<h3>Task: </h4>"
+            comment_str += "<h4> " + str(FormModel.task) + "</h5>"
+            comment_str += "<h3>Difficulty level: </h4>"
+            comment_str += "<h4> " + str(FormModel.level) + "</h5>"
+            comment_str += "<h3>Due Date: </h4>"
+            comment_str += "<h4> " + str(FormModel.date) + "</h5>"
+            comment_str += "<h3>Instructions: </h4>" 
+            comment_str += "<h4> " + str(FormModel.instructions) + "</h5>"
+            comment_str += "<h3>Assigned By: </h4>" 
+            comment_str += "<h4> " + str(FormModel.assignBy) + "</h5>"
+            comment_str += "<h3>Contact them here: </h4>" 
+            comment_str += "<h4> " + str(FormModel.email) + "</h5>"
             comment_str += "</div>"
-            comment_str += "<h2>Difficulty level: " + str(FormModel.level) + "</h2>"
-            comment_str += "<h2>Due Date: "+ str(FormModel.date) + "</h2>"
-            comment_str += "<h2>Instructions: </h2>" 
-            comment_str += "<h3> " + str(FormModel.instructions) + "</h3>"
-            comment_str += "<h2>Assigned By: " + str(FormModel.assignBy) + "</h2>"
-            comment_str += "<h2>Contact them here: " + str(FormModel.email) + "</h2>"
+            comment_str += "<br>"
+           
 
 
     	
