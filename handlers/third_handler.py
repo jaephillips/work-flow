@@ -28,12 +28,11 @@ class FormListHandler(webapp2.RequestHandler):
             comment_str += "<h4> " + str(FormModel.assignBy) + "</h5>"
             comment_str += "<h3>Contact them here: </h4>" 
             comment_str += "<h4> " + str(FormModel.email) + "</h5>"
+            comment_str += "<button> Remove Task </button>"
+            comment_str += "<br>"
             comment_str += "</div>"
             comment_str += "<br>"
-           
-
-
-    	
+               	
         html_params = {
             "html_comments": comment_str,
             "content": "Goodbye",
