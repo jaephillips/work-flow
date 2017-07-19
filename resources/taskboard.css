@@ -12,3 +12,12 @@ body{
 	background: rgba(76, 0, 80, 0.3)
 
 }
+
+#remove { background-color: purple;
+	      border: 3px solid lightblue;
+	      width: 130px;
+	      color: black;
+	      position: relative;
+	      top: -13px;
+          left:0px;
+}
