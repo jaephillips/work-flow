@@ -1,13 +1,23 @@
 h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 55px;
     color: black;
+    font-family: sans-serif;
 }
 body{
-	color: black;
+	color: white;
 }
 .comm{
 	border: 2px dashed black;
 	background: rgba(76, 0, 80, 0.3)
 
+}
+
+#remove { background-color: purple;
+	      border: 3px solid lightblue;
+	      width: 130px;
+	      color: black;
+	      position: relative;
+	      top: -13px;
+          left:0px;
 }
